@@ -223,26 +223,26 @@
     </section>
     
     <!-- Basic features section-->
-    <section class="bg-light">
+    <section class="bg-light" id="sec3">
         <div class="container px-5 mt-5 mb-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 animate-left" id="Lcol">
                     <h2 class="display-5 lh-1 mb-4">The Positive Impact of SNAP: <span style="color: #3461AA;">Emotional Stability and Thriving Lives</span></h2>
                     <p class="lead fw-normal text-muted mb-5 mb-lg-0">Our supplement is designed to help manage a range of symptoms related to neurological and behavioral disorders. A safe and effective over the counter multi-symptom reliever. An all-in-one treatment, it's simply the best brain supplement available without a prescription. What do you need help with?</p>
                 </div>
-                <div class="col-sm-8 col-md-6">
+                <div class="col-sm-8 col-md-6 animate-right" id="Rcol">
                     <div class="px-5 px-sm-0"><iframe style="max-width: 600px; width: 100%; height: 350px; border-radius: 20px;" src="https://www.youtube.com/embed/gBfzc2dryV0" frameborder="0" allowfullscreen></iframe></div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="sec4">
         <div class="container px-5 mt-5 mb-5" >
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <div class="col-sm-8 col-md-6">
+                <div class="col-sm-8 col-md-6 animate-left" id="Lcoll">
                     <div class="px-5 px-sm-0"><img src="assets/img/bad-domp.jpg" alt="bad bomp" style="max-width: 600px; width: 100%; border-radius: 20px;"></div>
                 </div>
-                <div class="col-12 col-lg-5">
+                <div class="mt-5 col-12 col-lg-5 animate-right" id="Rcoll">
                     <h2 class="display-5 lh-1 mb-4 ">Disorders can last a lifetime. SNAP = <span style="color: #3461AA;">Natural Treatment for life!</span></h2>
                     <p class="lead fw-normal text-muted mb-5 mb-lg-0">
                         SNAP Brain Formula is designed for the whole family in mind. It is available in capsule and liquid form for children and adults, making it extremely easy to take for children ages four and up.</p>
@@ -255,11 +255,11 @@
 
 
     <!-- carousel -->
-<section class="testimonial_section">
+<section class="testimonial_section" id="sec5">
             <div class="container ">
                 <div class="row">
                     <div class="col-lg-7">
-                       <div class="about_content">
+                       <div class="about_content animate-left p-4" id="Rifi">
                             <div class="background_layer"></div>
                             <div class="layer_content">
                                 <div class="section_title">
@@ -273,7 +273,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="testimonial_box">
+                        <div class="testimonial_box animate-right" id="Lefi">
                             <div class="testimonial_container">
                                 <div class="background_layer"></div>
                                 <div class="layer_content">
@@ -409,35 +409,45 @@
                 }
             })
 
-            const leftColumn = document.getElementById('left-column');
-            const rightColumn = document.getElementById('right-column');
-
-            // Function to add animation class when element with id "features" comes into view
             const animateOnScroll = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.target.id === 'features' && entry.isIntersecting) {
-                        leftColumn.classList.add('animate');
-                        rightColumn.classList.add('animate');
-                        observer.disconnect(); // Stop observing once animation applied
+    entries.forEach(entry => {
+        const targets = {
+            'features': ['left-column', 'right-column'],
+            'sec3': ['Lcol', 'Rcol'],
+            'sec4': ['Lcoll', 'Rcoll'],
+            'sec5': ['Rifi', 'Lefi']
+        };
+        
+        for (const targetId in targets) {
+            if (entry.target.id === targetId && entry.isIntersecting) {
+                targets[targetId].forEach(id => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.classList.add('animate');
                     }
                 });
-            };
+                observer.unobserve(entry.target); // Stop observing once animation applied
+            }
+        }
+    });
+};
 
-            // Options for the IntersectionObserver
-            const options = {
-                root: null,
-                threshold: 0.2 // Trigger animation when 20% of element is in viewport
-            };
+const options = {
+    root: null,
+    threshold: 0.2 // Trigger animation when 20% of element is in viewport
+};
 
-            // Create IntersectionObserver instance
-            const observer = new IntersectionObserver(animateOnScroll, options);
+const observer = new IntersectionObserver(animateOnScroll, options);
 
-            // Start observing the element with id "features"
-            observer.observe(document.getElementById('features'));
+observer.observe(document.getElementById('features'));
+observer.observe(document.getElementById('sec3'));
+observer.observe(document.getElementById('sec4'));
+observer.observe(document.getElementById('sec5'));
 
+   
 
+</script>
 
-        </script>
 </body>
 
 </html>
