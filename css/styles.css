@@ -11,8 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #2937f0;
-  --bs-indigo: #3461AA;
+  --bs-blue: #811781;
+  --bs-indigo: #CE2921;
   --bs-purple: #9f1ae2;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
@@ -2315,12 +2315,12 @@ textarea.form-control-lg {
   margin-right: 1rem;
 }
 .outbut{
-  border: 2px solid #3461AA !important;
-  color: #3461AA !important;
+  border: 2px solid #CE2921 !important;
+  color: #CE2921 !important;
 }
 .outbut:hover{
-  border: 2px solid #3461AA !important;
-  background-color: #3461AA !important ;
+  border: 2px solid #CE2921 !important;
+  background-color: #CE2921 !important ;
   color: #ffffff !important;
 }
 
@@ -2855,11 +2855,11 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #3461AA;
-  --bs-btn-border-color: #2937f0;
+  --bs-btn-bg: #CE2921;
+  --bs-btn-border-color: #CE2921;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #232fcc;
-  --bs-btn-hover-border-color: #212cc0;
+  --bs-btn-hover-bg: #811781;
+  --bs-btn-hover-border-color: #811781;
   --bs-btn-focus-shadow-rgb: 73, 85, 242;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #212cc0;
@@ -3643,10 +3643,10 @@ textarea.form-control-lg {
   }
 }
 .active{
-  color: #3461AA !important;
+  color: #CE2921 !important;
 }
 .nav-link:hover, .nav-link:focus {
-  color: #3461AA !important;
+  color: #CE2921 !important;
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -10958,7 +10958,6 @@ section {
 section.cta {
   position: relative;
   padding: 12rem 0;
-  background-image: url("https://www.snapalways.com//img/bg-clients-say.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -10973,7 +10972,7 @@ section.cta:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .icon-feature {
@@ -11004,7 +11003,7 @@ section.cta:before {
   height: 1rem;
   width: 1rem;
   transform: rotate(10deg);
-  fill: #2937f0;
+  fill: #CE2921;
   top: 15%;
   right: 10%;
 }
@@ -11012,7 +11011,7 @@ section.cta:before {
   position: absolute;
   height: 0.75rem;
   width: 0.75rem;
-  fill: #2937f0;
+  fill: #811781;
   bottom: 15%;
   left: 10%;
 }
@@ -11106,17 +11105,17 @@ footer a:hover, footer a:active, footer a:focus {
   display: none;
 }
 .masthead .masthead-device-mockup .circle .gradient-start-color {
-  stop-color: #021D47;
+  stop-color: #CE2921;
 }
 .masthead .masthead-device-mockup .circle .gradient-end-color {
-  stop-color: #3461AA;
+  stop-color: #811781;
 }
 .masthead .masthead-device-mockup .shape-1 {
   position: absolute;
   height: 1rem;
   width: 1rem;
   transform: rotate(-10deg);
-  fill: #2937f0;
+  fill: #CE2921;
   bottom: 15%;
   left: 10%;
 }
@@ -11124,7 +11123,7 @@ footer a:hover, footer a:active, footer a:focus {
   position: absolute;
   height: 0.75rem;
   width: 0.75rem;
-  fill: #2937f0;
+  fill: #811781;
   top: 15%;
   right: 10%;
 }
@@ -11183,7 +11182,7 @@ footer a:hover, footer a:active, footer a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3); /* Adjust the alpha value (0.5) to control the darkness of the overlay */
+  background: linear-gradient(to top, #CE2921, #811781); /* Adjust the alpha value (0.5) to control the darkness of the overlay */
   z-index: 1; /* Ensure the overlay is behind the content */
 }
 
@@ -11203,7 +11202,7 @@ footer a:hover, footer a:active, footer a:focus {
   content: "";
 }
 .testimonial_section .about_content {
-  background-color: #3460AB;
+  background-color: #CE2921;
   border-radius: 20px;
   padding-top: 77px;
   padding-right: 210px;
@@ -11211,7 +11210,7 @@ footer a:hover, footer a:active, footer a:focus {
   position: relative;
 }
 .testimonial_section .about_content .background_layer {
-  background-color: #3460AB;
+  background-color: #CE2921;
   width: auto;
   margin-left: -200px;
   right: 0;
@@ -11306,7 +11305,7 @@ footer a:hover, footer a:active, footer a:focus {
   vertical-align: middle;
 }
 .testimonial_section .about_content .layer_content a:hover {
-  color: #3460AB;
+  color: #CE2921;
 }
 .testimonial_section .testimonial_box {
   margin-top: 60px !important;
@@ -11314,12 +11313,12 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .testimonial_section .testimonial_box .testimonial_container {
   border-radius: 20px;
-  background-color: #3460AB;
+  background-color: #CE2921;
   margin-left: -170px !important;
   position: relative;
 }
 .testimonial_section .testimonial_box .testimonial_container .background_layer {
-  background-color: #021D47;
+  background-color: #811781;
   border-radius: 20px;
   width: auto;
   margin-right: -200px;
@@ -11372,7 +11371,7 @@ footer a:hover, footer a:active, footer a:focus {
   text-align: center;
   left: 46%;
   margin-top: 6px;
-  background-color: #3460AB;
+  background-color: #CE2921;
   border-radius: 20px;
   position: absolute;
 }
@@ -11418,7 +11417,7 @@ footer a:hover, footer a:active, footer a:focus {
   margin-right: 15px;
 
   border-radius: 20px;
-  background: #3460AB;
+  background: #CE2921;
   display: block;
   outline: 0;
   width: 34px;
@@ -11430,7 +11429,7 @@ footer a:hover, footer a:active, footer a:focus {
   transition: all 0.3s ease-in-out;
 }
 .testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-prev:hover {
-  background: #020d26;
+  background: #811781;
 }
 .testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-next {
   position: absolute;
@@ -11439,7 +11438,7 @@ footer a:hover, footer a:active, footer a:focus {
   border-radius: 20px;
   margin-right: 15px;
   display: block;
-  background: #3460AB;
+  background: #CE2921;
   outline: 0;
   width: 34px;
   text-align: center;
@@ -11451,7 +11450,7 @@ footer a:hover, footer a:active, footer a:focus {
   transition: all 0.3s ease-in-out;
 }
 .testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-next:hover {
-  background: #020d26;
+  background: #811781;
 }
 
 @media all and (max-width: 991px) {
@@ -11494,7 +11493,7 @@ footer a:hover, footer a:active, footer a:focus {
   color: #ffffff; border-color: #ffffff; border-radius: 20px;
 }
 .bobiin:hover{
-  color: #3460AB !important;
+  color: #CE2921 !important;
   background-color: #ffffff;
 
 }
